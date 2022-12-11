@@ -5,20 +5,20 @@ import java.util.LinkedList;
 public class Venda extends Entidade {
 
     private LinkedList<Ingresso> IngressosComprados = new LinkedList<>();
-    private Cliente ClienteDaVenda;
+    private Cliente clienteDaVenda;
 
     public Venda(){
         super();
-        ClienteDaVenda = null;
+        clienteDaVenda = null;
     }
 
     public Venda(Cliente clientedavenda, Ingresso novoingresso){
-        this.ClienteDaVenda = clientedavenda;
+        this.clienteDaVenda = clientedavenda;
         this.IngressosComprados.add(novoingresso);
     }
 
     public LinkedList<Ingresso> getIngressosComprados(){ return IngressosComprados; }
-    public Cliente getClienteDaVenda(){ return ClienteDaVenda; }
+    public Cliente getClienteDaVenda(){ return clienteDaVenda; }
 
     public String toString(){
         return String.format("Venda ID " + getId() + ":" + "\n\t Ingressos comprados: " +
