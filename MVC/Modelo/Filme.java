@@ -5,14 +5,14 @@ public class Filme extends Entidade {
      private String titulo;
      private int faixaEtaria; 
      private String genero;
-     private int ContagemdeIngressos;
+     private int contagemdeIngressos;
 
     public Filme(){
         super();
         titulo = "";
         faixaEtaria = 0;
         genero = "";
-        ContagemdeIngressos = 0;
+        contagemdeIngressos = 0;
     }
     public Filme(String titulo, int faixaEtaria, String genero, int contagemdeIngressos){
         setTitulo(titulo);
@@ -22,10 +22,10 @@ public class Filme extends Entidade {
     }
 
     public int getContagemdeIngressos(){
-        return ContagemdeIngressos;
+        return contagemdeIngressos;
     }
     public void setContagemdeIngressos(int contagemdeingressos){
-        this.ContagemdeIngressos = contagemdeingressos;
+        this.contagemdeIngressos = contagemdeingressos;
     }
 
     public String getTitulo() {
